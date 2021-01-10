@@ -1,5 +1,5 @@
 
-# das 8 damen problem
+#  eight queens puzzle
 
 from __future__ import print_function
 
@@ -10,18 +10,13 @@ def check_board(i):
     return True
 
 def print_board():
-    print("--------")
-
-    for i in range(1,9):
-        print(d[i-1], end ='')
-    print()
-
+    print("---------------")
     for i in range(1,9):
         for j in range(1,9):
             if (d[j-1] == i) and d[j-1] != 0:
-                print("X", end='')
+                print("X ", end='')
             else:
-                print(" ", end='')
+                print(". ", end='')
         print()
 
 
